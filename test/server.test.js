@@ -5,6 +5,6 @@ describe('Server', () => {
   it('handles a basic request', async () => {
     let response = await request(server).get('/')
 
-    expect(response.status).toEqual(404)
+    expect(response.text).toMatch(/Hello world/)
   })
 })
