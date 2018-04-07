@@ -1,14 +1,14 @@
 Arguments: 
-  /home/mike/.nodenv/versions/9.10.0/bin/node /home/mike/.nodenv/versions/9.10.0/bin/yarn test
+  /home/mike/.nodenv/versions/9.0.0/bin/node /home/mike/.nodenv/versions/9.0.0/bin/yarn test
 
 PATH: 
-  /home/mike/.nodenv/versions/9.10.0/bin:/home/mike/.nodenv/libexec:/home/mike/.nodenv/plugins/node-build/bin:/home/mike/.pyenv/shims:/home/mike/.pyenv/bin:/home/mike/.rbenv/shims:/home/mike/.rbenv/bin:/home/mike/.nodenv/shims:/home/mike/.nodenv/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/lib/jvm/default/bin:/usr/lib/oracle/product/11.2.0/xe/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/mike/go/bin
+  /home/mike/.nodenv/versions/9.0.0/bin:/home/mike/.nodenv/libexec:/home/mike/.nodenv/plugins/node-build/bin:/home/mike/.nodenv/shims:/home/mike/.nodenv/bin:/home/mike/npm/bin:/home/mike/.rbenv/shims:/home/mike/.rbenv/bin:/home/mike/.pyenv/shims:/home/mike/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/go/bin:/home/mike/go/bin
 
 Yarn version: 
   1.5.1
 
 Node version: 
-  9.10.0
+  9.0.0
 
 Platform: 
   linux x64
@@ -4922,9 +4922,10 @@ Trace:
   Directory: /home/mike/projects/foundation
   Output:
   
-      at ProcessTermError.MessageError (/home/mike/.nodenv/versions/9.10.0/lib/node_modules/yarn/lib/cli.js:186:110)
-      at new ProcessTermError (/home/mike/.nodenv/versions/9.10.0/lib/node_modules/yarn/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/home/mike/.nodenv/versions/9.10.0/lib/node_modules/yarn/lib/cli.js:30281:17)
-      at ChildProcess.emit (events.js:180:13)
-      at maybeClose (internal/child_process.js:936:16)
+      at ProcessTermError.MessageError (/home/mike/.nodenv/versions/9.0.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/home/mike/.nodenv/versions/9.0.0/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/home/mike/.nodenv/versions/9.0.0/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at emitTwo (events.js:135:13)
+      at ChildProcess.emit (events.js:224:7)
+      at maybeClose (internal/child_process.js:943:16)
       at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

@@ -1,5 +1,5 @@
 import request from 'supertest'
-import { server } from '../src/server'
+import { server } from '../server'
 
 describe('Server', () => {
   it('handles a basic request', async () => {
