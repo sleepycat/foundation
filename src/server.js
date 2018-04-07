@@ -2,6 +2,7 @@ import React from 'react'
 import express from 'express'
 import bodyParser from 'body-parser'
 import { renderToString } from 'react-dom/server'
+import { StaticRouter } from 'react-router-dom'
 import { App } from './App'
 
 export const server = express()
@@ -11,7 +12,12 @@ server
   .use(express.static(__dirname + '/public'))
   .use(bodyParser.json())
   .get('/*', (request, response) => {
-    const markup = renderToString(<App />)
+    let context = {}
+    const markup = renderToString(
+      <StaticRouter context={context} location={request.url}>
+        <App />
+      </StaticRouter>,
+    )
     response.status(200).send(`
     <!doctype html>
     <html lang="">
