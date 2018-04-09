@@ -28,6 +28,7 @@ server
     </head>
     <body>
       <div id="root">${markup}</div>
+      <script>window.main();</script>
     </body>
     </html>
 `)

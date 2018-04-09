@@ -1,0 +1,20 @@
+{
+  "About": {
+    "translation": "Selon nous",
+    "origin": [
+      [
+        "src/About.js",
+        6
+      ]
+    ]
+  },
+  "Hello world": {
+    "translation": "Bonjour le monde",
+    "origin": [
+      [
+        "src/Home.js",
+        6
+      ]
+    ]
+  }
+}

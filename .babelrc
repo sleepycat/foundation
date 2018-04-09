@@ -1,4 +1,13 @@
 {
-  "plugins": ["@babel/plugin-proposal-export-default-from"],
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "plugins": [
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-syntax-dynamic-import",
+    "dynamic-import-node",
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@lingui/babel-preset-react"
+  ]
 }
