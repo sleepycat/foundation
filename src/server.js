@@ -2,23 +2,21 @@ import React from 'react'
 import express from 'express'
 import bodyParser from 'body-parser'
 import { renderToString } from 'react-dom/server'
-import { StaticRouter } from 'react-router-dom'
+import { ServerLocation } from '@reach/router'
 import { App } from './App'
 
-export const server = express()
-
-server
-  .disable('x-powered-by')
-  .use(express.static(__dirname + '/public'))
-  .use(bodyParser.json())
-  .get('/*', (request, response) => {
-    let context = {}
-    const markup = renderToString(
-      <StaticRouter context={context} location={request.url}>
-        <App />
-      </StaticRouter>,
-    )
-    response.status(200).send(`
+export const createServer = () => {
+  return express()
+    .disable('x-powered-by')
+    .use(express.static(__dirname + '/public'))
+    .use(bodyParser.json())
+    .get('/*', (request, response) => {
+      const markup = renderToString(
+        <ServerLocation url={request.url}>
+          <App />
+        </ServerLocation>,
+      )
+      response.status(200).send(`
     <!doctype html>
     <html lang="">
       <head>
@@ -31,4 +29,5 @@ server
     </body>
     </html>
 `)
-  })
+    })
+}
